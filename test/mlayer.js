@@ -28,14 +28,12 @@ function mLayerJs(account) {
 					error = false;
 					console.warn('Attention: mLayer jQuery dependency');
 					return;
-
 				}else if (account == '' || account == null) {
 
 					error = true;
 					dependence = false;
 					console.error('Erro: No accounts set up');
 					return;
-
 				}else {
 
 					let data = data_account.replace(/@/g, '').replace(/ /g, '_');
@@ -53,14 +51,12 @@ function mLayerJs(account) {
 						error = false;
 
 						callback();
-						
 					}).fail(function () {
 
 						error = true;
 						dependence = false;
 						console.warn('Attention: Account does not exist');
 						return;
-
 					});
 
 				}
@@ -86,7 +82,6 @@ function mLayerJs(account) {
 					name = parseData(name);
 
 					return name;
-
 				}
 
 			},
